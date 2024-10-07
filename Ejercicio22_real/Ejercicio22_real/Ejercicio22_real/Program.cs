@@ -65,24 +65,19 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
 
                 } 
             }
-            
+            //Reatorno a while
+            Console.WriteLine("Señor medico; ¿Desea calcular el IMC de mas pacientes? (S/N)");
+            respuesta = Console.ReadLine().ToUpper();
+
+            if (respuesta == "N")
+            {
+                continuar = false;
+            }
 
 
         }
-        //Reatorno a while
-        Console.WriteLine("Señor medico; ¿Desea calcular el IMC de mas pacientes? (S/N)");
-        respuesta = Console.ReadLine().ToUpper();
-
-        if (respuesta == "N")
-        {
-            continuar = false;
-        }
+        
     } 
-    
-
-    
-
    
-
 
 }
