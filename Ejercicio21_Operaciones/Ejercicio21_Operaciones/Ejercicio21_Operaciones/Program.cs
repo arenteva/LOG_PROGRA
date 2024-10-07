@@ -9,7 +9,7 @@ internal class Program
         int opcion;
         double resultado = 0;
         bool continuar = true;
-        Stream salir;
+        string salir;
 
         //Relizo toda la logica del codigo
 
@@ -71,7 +71,7 @@ internal class Program
                     break;
 
              }
-            Console.WriteLine("Te has salido del programa ¡adios!");
+            Console.WriteLine("¿Deseas realizar otra operacion? (S/N)");
             salir = Console.ReadLine().ToUpper();
 
 
