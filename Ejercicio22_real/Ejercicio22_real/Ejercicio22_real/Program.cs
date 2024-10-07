@@ -19,6 +19,7 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
         double estatura, peso, imc;
         bool continuar = true;
         int n;
+        string respuesta;
 
         while (continuar) // se encarga simplemente de controlar si el medico quiere calcular un nuevo grupo de pacientes
         {
@@ -56,9 +57,9 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
                         Console.WriteLine($"El paciente con el IMC: {imc} esta en la categoria de 'Obesidad'");
                         break;
 
-
-
-
+                        default:
+                        Console.WriteLine($"El paciente con el IMC: {imc} no se encuentra en ninguna categoria");
+                        break;
 
 
 
@@ -68,7 +69,14 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
 
 
         }
+        //Reatorno a while
+        Console.WriteLine("Señor medico; ¿Desea calcular el IMC de mas pacientes? (S/N)");
+        respuesta = Console.ReadLine().ToUpper();
 
+        if (respuesta == "N")
+        {
+            continuar = false;
+        }
     } 
     
 
