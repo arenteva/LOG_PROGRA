@@ -72,16 +72,22 @@ internal class Program
                     break;
 
              }
-            Console.WriteLine("¿Deseas realizar otra operacion? (S/N)");
-            salir = Console.ReadLine().ToUpper();
-
-
-
-            if (salir == "N")
+            if (continuar)
             {
-                Console.WriteLine("Te has salido del programa ¡adios!");
-                continuar = false;
+                Console.WriteLine("¿Deseas realizar otra operacion? (S/N)");
+                salir = Console.ReadLine().ToUpper(); //este señor despues de capturar la letra por pantalla, me la va a piner en Mayus 
+
+                //metodo para poner un string en mayuscula o minuscula ToUpper() o ToLowe()
+                if (salir == "N")
+                {
+                    Console.WriteLine("Te has salido del programa ¡adios!");
+                    continuar = false;
+                }
+
             }
+            
+
+
 
 
 
