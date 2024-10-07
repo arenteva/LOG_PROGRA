@@ -23,6 +23,7 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
 
         while (continuar) // se encarga simplemente de controlar si el medico quiere calcular un nuevo grupo de pacientes
         {
+            Console.Clear();
             Console.Write("Ingrese el numero de pacientes: ");
             n = Convert.ToInt32(Console.ReadLine());
 
@@ -46,19 +47,19 @@ Mostrar en pantalla la categoría de cada uno de los pacientes. La aplicación d
                         break;
 
                     case double cat when cat >= 18.5 && cat < 25:
-                        Console.WriteLine($"El paciente con el IMC: {imc} esta en la categoria de 'Peso saludable'");
+                        Console.WriteLine($"\nEl paciente con el IMC: {imc} esta en la categoria de 'Peso saludable'");
                         break;
 
                     case double cat when cat >= 25 && cat < 30:
-                        Console.WriteLine($"El paciente con el IMC: {imc} esta en la categoria de 'Sobre peso'");
+                        Console.WriteLine($"\nEl paciente con el IMC: {imc} esta en la categoria de 'Sobre peso'");
                         break;
 
                     case double cat when cat >= 30:
-                        Console.WriteLine($"El paciente con el IMC: {imc} esta en la categoria de 'Obesidad'");
+                        Console.WriteLine($"\nEl paciente con el IMC: {imc} esta en la categoria de 'Obesidad'");
                         break;
 
                         default:
-                        Console.WriteLine($"El paciente con el IMC: {imc} no se encuentra en ninguna categoria");
+                        Console.WriteLine($"\nEl paciente con el IMC: {imc} no se encuentra en ninguna categoria");
                         break;
 
 
