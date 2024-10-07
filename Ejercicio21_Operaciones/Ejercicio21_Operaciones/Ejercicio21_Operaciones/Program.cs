@@ -35,15 +35,48 @@ internal class Program
 
             switch (opcion) 
             {
+                case 0:
+                    continuar = false;
+                    break;
                 case 1:
                     //Aqui implementamos la logica para el caso 1 y despues colocamos la palabra "break" !!!!
                     resultado = num1 + num2;
                     Console.WriteLine($"Suma: {num1} + {num2} = {resultado}");
                     break;
+                case 2:
+                    //Aqui implementamos la logica para el caso 1 y despues colocamos la palabra "break" !!!!
+                    resultado = num1 - num2;
+                    Console.WriteLine($"Resta: {num1} - {num2} = {resultado}");
+                    break;
+                case 3:
+                    //Aqui implementamos la logica para el caso 1 y despues colocamos la palabra "break" !!!!
+                    resultado = num1 * num2;
+                    Console.WriteLine($"Multiplicacion: {num1} x {num2} = {resultado}");
+                    break;
+                case 4:
+                    if (num2 !=0)
+                    {
+                        resultado = num1 / num2;
+                        Console.WriteLine($"Division: {num1} / {num2} = {resultado}");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error no se puede dividir por cero");
+
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Opcion no valida");
+                    break;
+                
 
 
 
-            
+
+
+
             }
             
 
