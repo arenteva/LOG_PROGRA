@@ -15,12 +15,7 @@ internal class Program
 
         do
         {
-            Console.Write("Ingrese el primer numero: ");
-            num1 = double.Parse(Console.ReadLine()); //double.parse es exactamente lo mismo que convert.Tobouble
-
-            Console.Write("Ingrese el segundo numero: ");
-            num2 = double.Parse(Console.ReadLine());
-
+            
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("Seleccione una operacion aritmetica");
             Console.WriteLine("1. sumar                           ");
@@ -30,6 +25,12 @@ internal class Program
             Console.WriteLine("0. salir                           ");
             Console.WriteLine("-------------------------------------");
             opcion = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese el primer numero: ");
+            num1 = double.Parse(Console.ReadLine()); //double.parse es exactamente lo mismo que convert.Tobouble
+
+            Console.Write("Ingrese el segundo numero: ");
+            num2 = double.Parse(Console.ReadLine());
 
             switch (opcion)
             {
