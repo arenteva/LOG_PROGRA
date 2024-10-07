@@ -34,7 +34,7 @@ internal class Program
 
         for (int i = menor; i <= mayor; i++)
         {    
-            Console.Write($"{i}  "); 
+            Console.Write($"{i}  ");
         }
         
 
