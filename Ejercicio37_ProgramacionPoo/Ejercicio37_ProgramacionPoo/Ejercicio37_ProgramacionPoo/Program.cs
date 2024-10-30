@@ -23,7 +23,13 @@ internal class Program
             Personas personas = new Personas(); //estamos creando un nuevo objeto de la clase persona
 
             //Vamos a asignar los valores que el usuario ingreso a las propiedades a la clase persona
-            personas.Nombre = nombre; 
+            personas.Nombre = nombre;
+            personas.Edad = edad;
+
+
+            //Me faltan invocar los metodos de la clase persona
+            personas.Presentar();
+            personas.EsMayorDeEdad();
 
         
         
