@@ -23,7 +23,7 @@ namespace Ejercicio37_ProgramacionPoo
         {
             Console.WriteLine($"Hola! Mi nombre es {Nombre} y tengo {Edad} años.");
         }
-
+        //Segundo metodo para validar si la persona es mayor de edad o no:
         public void EsMayorDeEdad()
         {
             if (Edad >=18)
